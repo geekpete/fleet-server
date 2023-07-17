@@ -98,7 +98,7 @@ func validateUserAgent(zlog zerolog.Logger, userAgent string, verConst version.C
 			Err(ErrUnsupportedVersion).
 			Str("verStr", verStr).
 			Str("constraints", verConst.String()).
-			Msg("unsuported user agent version")
+			Msg("unsupported user agent version")
 		return "", ErrUnsupportedVersion
 	}
 
